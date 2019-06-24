@@ -11,7 +11,7 @@ cd ~
 
 if [ ! -d "./KindleEar" ]
 then
-    git clone https://github.com/dragonhors/KindleEar.git
+    git clone https://github.com/dragonhors/kindle
 else
     response='y'
     read -r -p '已存在 KindleEar 源码，是否更新？[y/N]' response
@@ -20,7 +20,7 @@ else
         if [[ ! -d "./KindleEar/.git" ]]
         then
             rm -rf ./KindleEar
-            git clone https://github.com/dragonhors/KindleEar.git
+            git clone https://github.com/dragonhors/kindle
         else
             cd ./KindleEar
             git pull
